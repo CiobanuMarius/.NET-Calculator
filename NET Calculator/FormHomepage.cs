@@ -41,5 +41,10 @@ namespace NET_Calculator
                 formCalculator.Visible = true;
 
         }
+
+        private void ButtonCalculatorForm_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -34,18 +34,21 @@
             // 
             // ButtonCalculatorForm
             // 
-            this.ButtonCalculatorForm.Location = new System.Drawing.Point(247, 65);
+            this.ButtonCalculatorForm.Location = new System.Drawing.Point(329, 80);
+            this.ButtonCalculatorForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonCalculatorForm.Name = "ButtonCalculatorForm";
-            this.ButtonCalculatorForm.Size = new System.Drawing.Size(280, 120);
+            this.ButtonCalculatorForm.Size = new System.Drawing.Size(373, 148);
             this.ButtonCalculatorForm.TabIndex = 0;
             this.ButtonCalculatorForm.Text = "Calculator";
             this.ButtonCalculatorForm.UseVisualStyleBackColor = true;
+            this.ButtonCalculatorForm.Click += new System.EventHandler(this.ButtonCalculatorForm_Click_1);
             // 
             // ButtonAboutForm
             // 
-            this.ButtonAboutForm.Location = new System.Drawing.Point(247, 259);
+            this.ButtonAboutForm.Location = new System.Drawing.Point(329, 319);
+            this.ButtonAboutForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonAboutForm.Name = "ButtonAboutForm";
-            this.ButtonAboutForm.Size = new System.Drawing.Size(280, 120);
+            this.ButtonAboutForm.Size = new System.Drawing.Size(373, 148);
             this.ButtonAboutForm.TabIndex = 1;
             this.ButtonAboutForm.Text = "About";
             this.ButtonAboutForm.UseVisualStyleBackColor = true;
@@ -53,11 +56,12 @@
             // 
             // FormHomepage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.ButtonAboutForm);
             this.Controls.Add(this.ButtonCalculatorForm);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormHomepage";
             this.Text = "Homepage";
             this.ResumeLayout(false);
