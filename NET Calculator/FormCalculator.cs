@@ -17,9 +17,31 @@ namespace NET_Calculator
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonScadere_Click(object sender, EventArgs e)
         {
+            decimal termen1 = numericUpDownTermen1.Value;
+            decimal termen2 = numericUpDownTermen2.Value;
 
+            decimal rezultat = termen1 - termen2;
+            textBoxRezultat.Text = rezultat.ToString();
+        }
+
+        private void buttonInmultire_Click(object sender, EventArgs e)
+        {
+            decimal termen1 = numericUpDownTermen1.Value;
+            decimal termen2 = numericUpDownTermen2.Value;
+
+            decimal rezultat = termen1 * termen2;
+            textBoxRezultat.Text = rezultat.ToString();
+        }
+
+        private void buttonImpartire_Click(object sender, EventArgs e)
+        {
+            decimal termen1 = numericUpDownTermen1.Value;
+            decimal termen2 = numericUpDownTermen2.Value;
+
+            decimal rezultat = termen1 / termen2;
+            textBoxRezultat.Text = rezultat.ToString();
         }
     }
 }

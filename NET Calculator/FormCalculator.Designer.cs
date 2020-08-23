@@ -1,4 +1,6 @@
-﻿namespace NET_Calculator
+﻿using System;
+
+namespace NET_Calculator
 {
     partial class FormCalculator
     {
@@ -34,6 +36,7 @@
             this.buttonScadere = new System.Windows.Forms.Button();
             this.buttonInmultire = new System.Windows.Forms.Button();
             this.buttonImpartire = new System.Windows.Forms.Button();
+            this.textBoxRezultat = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTermen1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTermen2)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +73,7 @@
             this.buttonAdunare.TabIndex = 2;
             this.buttonAdunare.Text = "Adunare";
             this.buttonAdunare.UseVisualStyleBackColor = true;
-            this.buttonAdunare.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAdunare.Click += new System.EventHandler(this.buttonAdunare_Click);
             // 
             // buttonScadere
             // 
@@ -80,6 +83,7 @@
             this.buttonScadere.TabIndex = 3;
             this.buttonScadere.Text = "Scadere";
             this.buttonScadere.UseVisualStyleBackColor = true;
+            this.buttonScadere.Click += new System.EventHandler(this.buttonScadere_Click);
             // 
             // buttonInmultire
             // 
@@ -89,6 +93,7 @@
             this.buttonInmultire.TabIndex = 4;
             this.buttonInmultire.Text = "Inmultire";
             this.buttonInmultire.UseVisualStyleBackColor = true;
+            this.buttonInmultire.Click += new System.EventHandler(this.buttonInmultire_Click);
             // 
             // buttonImpartire
             // 
@@ -98,12 +103,22 @@
             this.buttonImpartire.TabIndex = 5;
             this.buttonImpartire.Text = "Impartire";
             this.buttonImpartire.UseVisualStyleBackColor = true;
+            this.buttonImpartire.Click += new System.EventHandler(this.buttonImpartire_Click);
+            // 
+            // textBoxRezultat
+            // 
+            this.textBoxRezultat.Enabled = false;
+            this.textBoxRezultat.Location = new System.Drawing.Point(390, 389);
+            this.textBoxRezultat.Name = "textBoxRezultat";
+            this.textBoxRezultat.Size = new System.Drawing.Size(272, 22);
+            this.textBoxRezultat.TabIndex = 6;
             // 
             // FormCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.textBoxRezultat);
             this.Controls.Add(this.buttonImpartire);
             this.Controls.Add(this.buttonInmultire);
             this.Controls.Add(this.buttonScadere);
@@ -115,8 +130,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTermen1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTermen2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
+
+        private void buttonAdunare_Click(object sender, EventArgs e)
+        {
+            decimal termen1 = numericUpDownTermen1.Value;
+            decimal termen2 = numericUpDownTermen2.Value;
+
+            decimal rezultat = termen1 + termen2;
+            textBoxRezultat.Text = rezultat.ToString();
+        }
+
+
 
         #endregion
 
@@ -126,5 +153,6 @@
         private System.Windows.Forms.Button buttonScadere;
         private System.Windows.Forms.Button buttonInmultire;
         private System.Windows.Forms.Button buttonImpartire;
+        private System.Windows.Forms.TextBox textBoxRezultat;
     }
 }
