@@ -33,24 +33,24 @@
             // 
             // LabelAbout
             // 
-            this.LabelAbout.AutoSize = true;
-            this.LabelAbout.Location = new System.Drawing.Point(244, 117);
+            this.LabelAbout.Location = new System.Drawing.Point(324, 181);
+            this.LabelAbout.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelAbout.Name = "LabelAbout";
-            this.LabelAbout.Size = new System.Drawing.Size(337, 39);
+            this.LabelAbout.Size = new System.Drawing.Size(400, 150);
             this.LabelAbout.TabIndex = 0;
             this.LabelAbout.Text = "This is a desktop calculator applicattion. \r\n\r\nIt was created with Visual Code an" +
     "d Windows Forms .NET framework.";
             // 
             // FormAbout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.LabelAbout);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormAbout";
             this.Text = "FormAbout";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
