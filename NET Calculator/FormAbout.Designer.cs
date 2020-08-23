@@ -40,6 +40,7 @@
             this.LabelAbout.TabIndex = 0;
             this.LabelAbout.Text = "This is a desktop calculator applicattion. \r\n\r\nIt was created with Visual Code an" +
     "d Windows Forms .NET framework.";
+            this.LabelAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FormAbout
             // 
@@ -47,7 +48,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.LabelAbout);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAbout";
             this.Text = "FormAbout";
             this.ResumeLayout(false);

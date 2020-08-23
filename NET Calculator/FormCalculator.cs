@@ -37,11 +37,16 @@ namespace NET_Calculator
 
         private void buttonImpartire_Click(object sender, EventArgs e)
         {
+             
+
             decimal termen1 = numericUpDownTermen1.Value;
             decimal termen2 = numericUpDownTermen2.Value;
 
             decimal rezultat = termen1 / termen2;
             textBoxRezultat.Text = rezultat.ToString();
+
+
+
         }
     }
 }
