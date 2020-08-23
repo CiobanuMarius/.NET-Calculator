@@ -28,22 +28,25 @@ namespace NET_Calculator
         {
             if (formAbout.Visible == true)
                 formAbout.Visible = false;
+            if (formAbout.IsDisposed) formAbout = new FormAbout();
             else
                 formAbout.Visible = true;
+          
 
         }
 
-        private void ButtonCalculatorForm_Click(object sender, EventArgs e)
-        {
-            if (formCalculator.Visible == true)
-                formCalculator.Visible = false;
-            else
-                formCalculator.Visible = true;
-
-        }
+      
 
         private void ButtonCalculatorForm_Click_1(object sender, EventArgs e)
         {
+            if (formCalculator.Visible == true)
+                formCalculator.Visible = false;
+            if (formCalculator.IsDisposed) formCalculator = new FormCalculator();
+            else
+                formCalculator.Visible = true;
+
+            
+
 
         }
     }
