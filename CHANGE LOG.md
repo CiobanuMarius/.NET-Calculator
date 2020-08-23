@@ -1,3 +1,8 @@
+# Installed all pre-requisites 
+
+- Visual Studio Community 2019, Microsoft SQL Server 2017 & Microsoft SQL Server Management Studio 18
+
+
 # Week 1
 - added the local repository setting files;
 
