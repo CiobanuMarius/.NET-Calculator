@@ -38,4 +38,4 @@
 
 - created a CHANGE LOG.md file that is linked in the README.md file;
 
-<img src="images/README.PNG" height="400" >
+<img src="images/README.PNG" height="300" >
