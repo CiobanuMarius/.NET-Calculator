@@ -19,6 +19,9 @@ namespace NET_Calculator
 
         private void buttonScadere_Click(object sender, EventArgs e)
         {
+
+            // Defined Substract Operation
+
             decimal termen1 = numericUpDownTermen1.Value;
             decimal termen2 = numericUpDownTermen2.Value;
 
@@ -28,6 +31,9 @@ namespace NET_Calculator
 
         private void buttonInmultire_Click(object sender, EventArgs e)
         {
+
+            // Defined Multiply Operation
+
             decimal termen1 = numericUpDownTermen1.Value;
             decimal termen2 = numericUpDownTermen2.Value;
 
@@ -37,12 +43,28 @@ namespace NET_Calculator
 
         private void buttonImpartire_Click(object sender, EventArgs e)
         {
-             
-            decimal termen1 = numericUpDownTermen1.Value;
-            decimal termen2 = numericUpDownTermen2.Value;
 
-            decimal rezultat = termen1 / termen2;
-            textBoxRezultat.Text = rezultat.ToString();
+            // Defined Divide Operation
+            // Added try-catch Statement for the "Divide by 0 exception"
+
+            try
+            {
+                decimal termen1 = numericUpDownTermen1.Value;
+                decimal termen2 = numericUpDownTermen2.Value;
+
+                decimal rezultat = termen1 / termen2;
+                textBoxRezultat.Text = rezultat.ToString();
+            }
+
+            // Output for "Divide by 0 exception" error message
+
+            catch (DivideByZeroException)
+
+            {
+                string rezultat_error = "ACCORDING TO SCIENCE, WE CANNOT DIVIDE BY 0 !";
+                textBoxRezultat.Text = rezultat_error.ToString();
+                
+            }
 
         }
     }
