@@ -39,3 +39,15 @@
 - created a CHANGE LOG.md file that is linked in the README.md file;
 
 <img src="images/README.PNG" height="320" >
+
+- added 2 new images;
+
+- added try-catch statement for the Divide operation in order for the application to continue to run when user tries to Divide by 0;
+
+<img src="images/trycatch.PNG" height="320" >
+
+- created an error output for the user in order to know to change the value of the denominator;
+
+<img src="images/trycatchoutput.PNG" height="320" >
+
+- tried cleaning up the code by commenting several sections;
