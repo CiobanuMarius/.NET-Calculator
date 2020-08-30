@@ -35,7 +35,6 @@ namespace NET_Calculator
 
         }
 
-      
 
         private void ButtonCalculatorForm_Click_1(object sender, EventArgs e)
         {
@@ -45,8 +44,10 @@ namespace NET_Calculator
             else
                 formCalculator.Visible = true;
 
-            
+        }
 
+        private void FormHomepage_Load(object sender, EventArgs e)
+        {
 
         }
     }

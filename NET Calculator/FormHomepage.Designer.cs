@@ -35,7 +35,7 @@
             // ButtonCalculatorForm
             // 
             this.ButtonCalculatorForm.Location = new System.Drawing.Point(329, 80);
-            this.ButtonCalculatorForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonCalculatorForm.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonCalculatorForm.Name = "ButtonCalculatorForm";
             this.ButtonCalculatorForm.Size = new System.Drawing.Size(373, 148);
             this.ButtonCalculatorForm.TabIndex = 0;
@@ -46,7 +46,7 @@
             // ButtonAboutForm
             // 
             this.ButtonAboutForm.Location = new System.Drawing.Point(329, 319);
-            this.ButtonAboutForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonAboutForm.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonAboutForm.Name = "ButtonAboutForm";
             this.ButtonAboutForm.Size = new System.Drawing.Size(373, 148);
             this.ButtonAboutForm.TabIndex = 1;
@@ -61,9 +61,13 @@
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.ButtonAboutForm);
             this.Controls.Add(this.ButtonCalculatorForm);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "FormHomepage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Homepage";
+            this.Load += new System.EventHandler(this.FormHomepage_Load);
             this.ResumeLayout(false);
 
         }
