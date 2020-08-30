@@ -30,6 +30,7 @@ namespace NET_Calculator
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCalculator));
             this.numericUpDownTermen1 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownTermen2 = new System.Windows.Forms.NumericUpDown();
             this.buttonAdunare = new System.Windows.Forms.Button();
@@ -43,7 +44,7 @@ namespace NET_Calculator
             // 
             // numericUpDownTermen1
             // 
-            this.numericUpDownTermen1.Location = new System.Drawing.Point(249, 75);
+            this.numericUpDownTermen1.Location = new System.Drawing.Point(280, 75);
             this.numericUpDownTermen1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numericUpDownTermen1.Maximum = new decimal(new int[] {
             1000000,
@@ -51,12 +52,12 @@ namespace NET_Calculator
             0,
             0});
             this.numericUpDownTermen1.Name = "numericUpDownTermen1";
-            this.numericUpDownTermen1.Size = new System.Drawing.Size(200, 22);
+            this.numericUpDownTermen1.Size = new System.Drawing.Size(225, 22);
             this.numericUpDownTermen1.TabIndex = 0;
             // 
             // numericUpDownTermen2
             // 
-            this.numericUpDownTermen2.Location = new System.Drawing.Point(575, 75);
+            this.numericUpDownTermen2.Location = new System.Drawing.Point(647, 75);
             this.numericUpDownTermen2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numericUpDownTermen2.Maximum = new decimal(new int[] {
             1000000,
@@ -64,15 +65,16 @@ namespace NET_Calculator
             0,
             0});
             this.numericUpDownTermen2.Name = "numericUpDownTermen2";
-            this.numericUpDownTermen2.Size = new System.Drawing.Size(200, 22);
+            this.numericUpDownTermen2.Size = new System.Drawing.Size(225, 22);
             this.numericUpDownTermen2.TabIndex = 1;
             // 
             // buttonAdunare
             // 
-            this.buttonAdunare.Location = new System.Drawing.Point(76, 229);
+            this.buttonAdunare.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonAdunare.Location = new System.Drawing.Point(86, 229);
             this.buttonAdunare.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAdunare.Name = "buttonAdunare";
-            this.buttonAdunare.Size = new System.Drawing.Size(140, 90);
+            this.buttonAdunare.Size = new System.Drawing.Size(158, 90);
             this.buttonAdunare.TabIndex = 2;
             this.buttonAdunare.Text = "Adunare";
             this.buttonAdunare.UseVisualStyleBackColor = true;
@@ -80,10 +82,11 @@ namespace NET_Calculator
             // 
             // buttonScadere
             // 
-            this.buttonScadere.Location = new System.Drawing.Point(309, 229);
+            this.buttonScadere.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonScadere.Location = new System.Drawing.Point(348, 229);
             this.buttonScadere.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonScadere.Name = "buttonScadere";
-            this.buttonScadere.Size = new System.Drawing.Size(140, 90);
+            this.buttonScadere.Size = new System.Drawing.Size(158, 90);
             this.buttonScadere.TabIndex = 3;
             this.buttonScadere.Text = "Scadere";
             this.buttonScadere.UseVisualStyleBackColor = true;
@@ -91,10 +94,11 @@ namespace NET_Calculator
             // 
             // buttonInmultire
             // 
-            this.buttonInmultire.Location = new System.Drawing.Point(575, 229);
+            this.buttonInmultire.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonInmultire.Location = new System.Drawing.Point(647, 229);
             this.buttonInmultire.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonInmultire.Name = "buttonInmultire";
-            this.buttonInmultire.Size = new System.Drawing.Size(140, 90);
+            this.buttonInmultire.Size = new System.Drawing.Size(158, 90);
             this.buttonInmultire.TabIndex = 4;
             this.buttonInmultire.Text = "Inmultire";
             this.buttonInmultire.UseVisualStyleBackColor = true;
@@ -102,10 +106,11 @@ namespace NET_Calculator
             // 
             // buttonImpartire
             // 
-            this.buttonImpartire.Location = new System.Drawing.Point(809, 229);
+            this.buttonImpartire.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonImpartire.Location = new System.Drawing.Point(910, 229);
             this.buttonImpartire.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonImpartire.Name = "buttonImpartire";
-            this.buttonImpartire.Size = new System.Drawing.Size(140, 90);
+            this.buttonImpartire.Size = new System.Drawing.Size(158, 90);
             this.buttonImpartire.TabIndex = 5;
             this.buttonImpartire.Text = "Impartire";
             this.buttonImpartire.UseVisualStyleBackColor = true;
@@ -115,18 +120,18 @@ namespace NET_Calculator
             // 
             this.textBoxRezultat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxRezultat.Enabled = false;
-            this.textBoxRezultat.Location = new System.Drawing.Point(325, 379);
+            this.textBoxRezultat.Location = new System.Drawing.Point(366, 379);
             this.textBoxRezultat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxRezultat.Name = "textBoxRezultat";
-            this.textBoxRezultat.Size = new System.Drawing.Size(373, 22);
+            this.textBoxRezultat.Size = new System.Drawing.Size(419, 22);
             this.textBoxRezultat.TabIndex = 6;
             this.textBoxRezultat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FormCalculator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1200, 554);
             this.Controls.Add(this.textBoxRezultat);
             this.Controls.Add(this.buttonImpartire);
             this.Controls.Add(this.buttonInmultire);
@@ -134,12 +139,15 @@ namespace NET_Calculator
             this.Controls.Add(this.buttonAdunare);
             this.Controls.Add(this.numericUpDownTermen2);
             this.Controls.Add(this.numericUpDownTermen1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "FormCalculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCalculator";
+            this.Load += new System.EventHandler(this.FormCalculator_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTermen1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTermen2)).EndInit();
             this.ResumeLayout(false);

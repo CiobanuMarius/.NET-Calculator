@@ -67,5 +67,10 @@ namespace NET_Calculator
             }
 
         }
+
+        private void FormCalculator_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
