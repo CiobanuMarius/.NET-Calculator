@@ -1,6 +1,6 @@
 # Installed all pre-requisites 
 
-- Visual Studio Community 2019, Microsoft SQL Server 2017 & Microsoft SQL Server Management Studio 18
+- Visual Studio Community 2019, Microsoft SQL Server 2017 & Microsoft SQL Server Management Studio 18.
 
 
 # Week 1
@@ -14,7 +14,7 @@
 
 <img src="images/formHomepage.PNG" height="220" >
 
-- created a 2nd form which has a label (LabelAbout) which was linked to the About button. Added in the below text:
+- created a 2nd form which has a label (LabelAbout) which was linked to the About button. Added in the below text.
 
 <img src="images/pressing%20about.PNG" height="400" >
 
@@ -50,7 +50,7 @@
 
 <img src="images/trycatchoutput.PNG" height="250" >
 
-- tried cleaning up the code by commenting several sections;
+- tried cleaning up the code by commenting several sections.
 
 # Week 3
 
