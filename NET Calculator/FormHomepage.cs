@@ -46,9 +46,18 @@ namespace NET_Calculator
 
         }
 
-        private void FormHomepage_Load(object sender, EventArgs e)
+        // MessageBox asking if the user wants to exit the Application
+        private void FormHomepage_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            DialogResult dialog = MessageBox.Show("Exit APPLICATION ?", "YOU MIGHT WANT TO USE ME LATER !", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

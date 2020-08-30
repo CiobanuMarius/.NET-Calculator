@@ -34,7 +34,7 @@
             // 
             // LabelAbout
             // 
-            this.LabelAbout.Location = new System.Drawing.Point(364, 181);
+            this.LabelAbout.Location = new System.Drawing.Point(74, 88);
             this.LabelAbout.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelAbout.Name = "LabelAbout";
             this.LabelAbout.Size = new System.Drawing.Size(450, 150);
@@ -45,9 +45,9 @@
             // 
             // FormAbout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 554);
+            this.ClientSize = new System.Drawing.Size(584, 361);
             this.Controls.Add(this.LabelAbout);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

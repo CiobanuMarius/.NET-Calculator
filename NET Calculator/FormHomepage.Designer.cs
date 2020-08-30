@@ -36,10 +36,10 @@
             // ButtonCalculatorForm
             // 
             this.ButtonCalculatorForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ButtonCalculatorForm.Location = new System.Drawing.Point(370, 80);
+            this.ButtonCalculatorForm.Location = new System.Drawing.Point(189, 34);
             this.ButtonCalculatorForm.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonCalculatorForm.Name = "ButtonCalculatorForm";
-            this.ButtonCalculatorForm.Size = new System.Drawing.Size(420, 148);
+            this.ButtonCalculatorForm.Size = new System.Drawing.Size(200, 125);
             this.ButtonCalculatorForm.TabIndex = 0;
             this.ButtonCalculatorForm.Text = "Calculator";
             this.ButtonCalculatorForm.UseVisualStyleBackColor = true;
@@ -47,10 +47,10 @@
             // 
             // ButtonAboutForm
             // 
-            this.ButtonAboutForm.Location = new System.Drawing.Point(370, 319);
+            this.ButtonAboutForm.Location = new System.Drawing.Point(189, 206);
             this.ButtonAboutForm.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonAboutForm.Name = "ButtonAboutForm";
-            this.ButtonAboutForm.Size = new System.Drawing.Size(420, 148);
+            this.ButtonAboutForm.Size = new System.Drawing.Size(200, 125);
             this.ButtonAboutForm.TabIndex = 1;
             this.ButtonAboutForm.Text = "About";
             this.ButtonAboutForm.UseVisualStyleBackColor = true;
@@ -58,9 +58,9 @@
             // 
             // FormHomepage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 554);
+            this.ClientSize = new System.Drawing.Size(584, 361);
             this.Controls.Add(this.ButtonAboutForm);
             this.Controls.Add(this.ButtonCalculatorForm);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -71,7 +71,7 @@
             this.Name = "FormHomepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Homepage";
-            this.Load += new System.EventHandler(this.FormHomepage_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormHomepage_FormClosing);
             this.ResumeLayout(false);
 
         }

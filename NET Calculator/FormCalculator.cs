@@ -63,14 +63,23 @@ namespace NET_Calculator
             {
                 string rezultat_error = "ACCORDING TO SCIENCE, WE CANNOT DIVIDE BY 0 !";
                 textBoxRezultat.Text = rezultat_error.ToString();
-                
+
             }
 
         }
 
-        private void FormCalculator_Load(object sender, EventArgs e)
+        // MessageBox asking if the user wants to close the Calculator
+        private void FormCalculator_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            DialogResult dialog = MessageBox.Show("Close CALCULATOR ?", "PLEASE SAVE RESULT BEFORE CLOSING !", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.Yes)
+            {
+                Application.Exit();
+            }    
+            else 
+            {
+                e.Cancel = true;
+            }
         }
     }
 }
