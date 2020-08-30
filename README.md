@@ -8,7 +8,7 @@ See [CHANGE LOG.md](https://github.com/CiobanuMarius/.NET-Calculator/blob/master
 
 POC that all the operations are working as intended.
 
-<img src="images/formcalculator.PNG" height="500" >
+<img src="images/formcalculator.PNG" height="300" >
 
  # Mentor:
 
