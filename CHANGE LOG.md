@@ -51,3 +51,21 @@
 <img src="images/trycatchoutput.PNG" height="320" >
 
 - tried cleaning up the code by commenting several sections;
+
+# Week 3
+
+- removed Maximize button from all Forms, made them a fixed size and to appear in the center of the screen when opening;
+
+- added Icons for each form;
+
+FormHomepage <img src="images/CalculatorIcon.ico" height="20" >
+FormCalculator <img src="images/OperationsIcon.ico" height="20" >
+FormAbout <img src="images/AboutIcon.ico" height="20" >
+
+- resized all forms, buttons, textboxes of each Form (especially the FormCalculator);
+
+<img src="images/CalculatorIcon.ico" height="20" >
+
+- added a messagebox asking if the user wants to close the calculator form and one if he wants to exit the application;
+
+<img src="images/CalculatorIcon.ico" height="20" >
